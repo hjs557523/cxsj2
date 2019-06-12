@@ -1,0 +1,17 @@
+<!--pages/studyplan/addplan/addplan.wxml-->
+<view class="container">
+  <form class="form" bindsubmit="submit1">
+    <view class="dectext">计划名称</view>
+    <view class="bd-in"></view>
+    <input name = "input" placeholder='请输入计划名称' focus="true" class="input"></input>
+
+    <view class="div-picktime">
+      <view class="dectext">请选择日期</view>
+      <view class="bd-in"></view>
+      <picker name="picker" mode="date" value='{{selectTime}}' start="{{currentTime}}" end="2100-01-01" bindchange="selectTime">
+        <view class="weui-input">{{selectTime}}</view>
+      </picker>
+    </view>
+    <button type="primary" size="{{primarySize}}" form-type="submit" class="button">加入计划列表</button>
+  </form>
+</view>

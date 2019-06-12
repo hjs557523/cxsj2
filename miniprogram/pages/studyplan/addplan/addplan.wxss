@@ -1,0 +1,52 @@
+/* pages/studyplan/addplan/addplan.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  background: rgb(245, 212, 217);
+  height: 1300rpx;
+  align-items: center;
+  justify-content: space-between;
+  padding: 150rpx 0;
+  box-sizing: border-box;
+}
+
+.bd{
+  width: 700rpx;
+  height: 1rpx;
+  margin-top: 30rpx;
+  background: #bbf;
+}
+
+.bd-in{
+  width: 600rpx;
+  height: 2rpx;
+  margin-top: 30rpx;
+  background: #bbf;
+}
+
+.button{
+  margin-top: 60rpx;
+  width: 500rpx;
+}
+
+
+.dectext{
+  font-size: 30rpx;
+}
+
+
+.datetext{
+  font-size: 40rpx;
+}
+
+
+.div-picktime{
+  margin-top: 80rpx;
+}
+
+.input{
+  font-size: 40rpx;
+  display: flex;
+  overflow: auto;
+  height: auto;
+}

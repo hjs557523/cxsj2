@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<import src="/dist/loadmore/index.wxml"/>
+ <view class="page-body-wrapper">
+  <image class="logo" src='../../images/funlogo.png' mode='widthFix'></image>
+  <image class="bg-img" src='../../images/background.png' mode='widthFix'></image>
+  <view class="btn-area">
+    <navigator class="btn btn1" hover-class="none" url="../word/word" open-type='navigate'><text class="icon1"></text><text class="text">搞笑段子</text></navigator>
+    <navigator class="btn btn3" hover-class="none" url="../pics/pics" open-type='navigate'><text class="icon3"></text><text class="text">有趣动图</text></navigator>
+    <navigator class="btn btn2" hover-class="none" url="../video/video"  open-type='navigate'><text class="icon2"></text><text class="text">精彩视频</text></navigator>
+    <navigator class="btn btn3" hover-class="none" url="../index/index"  open-type='switchTab'><text class="icon4"></text><text class="text">返回主页</text></navigator>
+  </view>
+</view>

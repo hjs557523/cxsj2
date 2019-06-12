@@ -1,0 +1,21 @@
+<!--pages/studyplan/studying/studying.wxml-->
+<view class='date'>{{date}}</view>
+<image src='/images/writing.png' class='logo'></image>
+<view class='container'>
+  <block class="log-list" wx:for="{{list}}" wx:for-item="item" wx:key="{{index}}">
+    <view id="{{index}}" bindtap='tapList'>
+      <view class='list-item'>
+        <image src='/images/jinxing7.png' class='item-logo'></image>
+        <view class='item-texts'>
+          <view class='item-title'>{{item.text}}</view>
+          <view class='item-time'>{{item.time}}      剩余{{item.remainTime}}天</view>
+        </view>
+      </view>
+      <view class="list-item-options {{item.isShow? 'list-item-options-show' : '' }}">
+        <view class="list-item-option {{item.isShow? 'list-item-option-show' : ''}}" id="{{index}}" bindtap='tapFinish'>完成</view>
+        <view class="list-item-option {{item.isShow? 'list-item-option-show' : ''}}" style="background:red" id="{{index}}" bindtap='tapAbandon'>放弃</view>
+      </view>
+    </view>
+  </block>
+</view>
+<image bindtap = "addPlan" type = "primary" size = "{{primarySize}}" src="/images/addnew.png" class="addnew"></image>

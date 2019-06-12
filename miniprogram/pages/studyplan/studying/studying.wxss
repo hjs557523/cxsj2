@@ -1,0 +1,142 @@
+/* pages/studyplan/studying/studying.wxss */
+.userinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.logo{
+  background: none;
+  height: 100rpx;
+  width: 100rpx;
+  position: fixed;
+  right: 10rpx;
+  top:10rpx;
+}
+
+.userinfo-nickname{
+  color:#aaa;
+}
+
+.container{
+  height: max-content;
+  background-image: none;
+  background-color: rgb(236, 173, 158);
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 150rpx 0;
+  box-sizing: border-box;
+}
+
+.date{
+  position: fixed;
+  top: 50rpx;
+  left: 30rpx;
+  font-size: 40rpx;
+  color: #ffffff;
+}
+
+.log-list{
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+  margin-top: 20rpx;
+}
+
+.addnew{
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 100rpx;
+  position: fixed;
+  right: 35rpx;
+  bottom: 35rpx;
+  font-size: 60rpx;
+  z-index: 99;
+}
+
+.list-item-options{
+  height: 0;
+  overflow: hidden;
+}
+
+.list-item-options-show{
+  height: auto;
+}
+
+.list-item-option{
+  width: 600rpx;
+  height: auto;
+  margin:0rpx 40rpx;
+  text-align: center;
+  background: green;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  transform: translateY(-50%);
+  transition: .3s;
+}
+
+.list-item-option-show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.list-item-option-abandon{
+  width: 600rpx;
+  height: auto;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin: 0rpx 40rpx;
+  text-align: center;
+  background: red;
+}
+
+.list-item{
+  display: flex;
+  width: 675rpx;
+  height: 200rpx;
+  margin-top: 15rpx;
+  overflow: auto;
+  padding: 10rpx;
+  border-radius: 20rpx;
+  background: #cdf;
+}
+
+.item-logo{
+  position: relative;
+  width: 120rpx;
+  height: 120rpx;
+  padding: 30rpx;
+  background: none;
+}
+
+.item-texts{
+  width: 470rpx;
+  padding:30rpx;
+}
+
+.item-title{
+  display: flex;
+  position: relative;
+  left: 30rpx;
+  width: 400rpx;
+  height: 100rpx;
+  font-size: 40rpx;
+}
+
+.item-time{
+  position: relative;
+  left: 30rpx;
+  margin-top: 10rpx;
+  font-size: 35rpx;
+  font-family: "MicrosoftJhengHei";
+}

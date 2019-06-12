@@ -1,0 +1,52 @@
+/* pages/studyplan/finished/finished.wxss */
+.log-list{
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+  background: #17f;
+}
+
+.icon{
+  position: relative;
+  left: 5rpx;
+  top: 5rpx;
+  height: 100rpx;
+  width: 100rpx;
+  padding: 50rpx;
+}
+
+.title{
+  position: relative;
+  left: 5rpx;
+  top: 10rpx;
+  font-size: 40rpx;
+  font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+}
+
+.plantime{
+  position: relative;
+  margin-top: 20rpx;
+  left: 5rpx;
+  top: 5rpx;
+  font-size: 26rpx;
+}
+
+.finishtime{
+  position: relative;
+  margin-top: 20rpx;
+  left: 5rpx;
+  top: 5rpx;
+  font-size: 26rpx;
+}
+
+.log-item{
+  width: 675rpx;
+  height: auto;
+  margin-top: 20rpx;
+  overflow: hidden;
+  padding: 10rpx;
+  border-radius: 20rpx;
+  background: #cdf;
+  display: flex;
+  flex-direction: row;
+}

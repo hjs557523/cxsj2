@@ -1,0 +1,66 @@
+/* pages/studynote/add/add.wxss */
+.add-memo{
+  width:100%;
+  overflow: hidden;
+}
+.head{
+  height: 4rem;
+  line-height: 4rem;
+  overflow: hidden;
+  border-bottom: 1rpx solid #ddd;
+  padding: 0 30rpx;
+  font-size: 1rem;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.head .iconfont{
+  font-size: 1.1rem;
+  margin-right: .2rem;
+}
+.head .icon-left{
+  color: #f0720b;
+}
+.head .icon-save{
+  color: #2de488;
+}
+.head span{
+  display:inline-block;
+  vertical-align:middle;
+}
+.memo-time{
+  font-size: .8rem;
+  color: #999;
+  padding:.5rem 0;
+}
+.memo-text{
+  font-size:.8rem;
+  /* line-height: 1.3rem; */
+  padding: 0.4rem 1rem 0.8rem 1rem;
+  
+}
+.memo-text .showtime{
+  display: block;
+}
+.memo-text .hidetime{
+  display:none;
+}
+.memo-title textarea{
+  width:100%;
+  font-size: 1.2rem;
+  border-bottom: 1rpx solid #ddd;
+  padding:.5rem 0;
+  line-height: 1.5rem;
+  margin-bottom: .8rem;
+}
+
+.memo-area textarea{
+  width:100%;
+  height: auto;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  color: #666
+}

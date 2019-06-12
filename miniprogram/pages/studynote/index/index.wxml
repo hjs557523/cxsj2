@@ -1,0 +1,51 @@
+<!--pages/studynote/index/index.wxml-->
+<view class="memo">
+  <view class="head">
+    <view class="left logo {{isNull?'null-text':'has-text'}}" bindtap='instruction'>学习笔记
+      <i class="info iconfont icon-info"></i>
+    </view>
+    
+    <view class="left {{isNull?'has-text':'null-text'}}" bindtap="editCheckBox">
+      <span class="iconfont icon-option"></span>
+      <text class="{{topText?'edit':'finish'}}" >{{option}}</text>
+    </view>
+        
+    <text class="{{isNull?'has-text':'null-text'}}">共{{allLength}}条笔记记录</text>
+        
+    <view class="right" bindtap="addMemoLists">
+      <span class="iconfont icon-edit"></span>
+      <text class="right" >新增笔记</text>
+    </view>
+  </view>
+
+  <view class="lists {{isEdit?'edit-checkbox':'unedit-checkbox'}}">
+    <checkbox-group bindchange="checkboxChange">
+      <view class="checkbox" wx:for="{{memoLists}}" for="null" wx:for-item="log" wx:key="memoId">
+        <label wx:for="{{log}}" wx:key="memoId" for="null">
+          <checkbox value="{{index + 1}}"/>
+          <span class="iconfont icon-bq3"></span>
+          <view class="unedit-memodesc">
+            <navigator class="memodetail" url="/pages/studynote/edit/edit?id={{index}}&title={{item.title}}&value={{item.text}}&time={{item.time}}" hover-class="none" open-type="redirect">
+              <p class="desc">{{item.title}}</p>
+              <p class="time">{{item.time}}</p>
+            </navigator>
+            <icon class="iconfont icon-right"></icon>
+          </view>
+          <view class="edit-memodesc">
+            <p class="desc">{{item.title}}</p>
+            <p class="time">{{item.time}}</p>
+          </view>
+        </label>
+      </view>
+    </checkbox-group>
+    <view class="null  {{isNull?'null-text':'has-text'}}" >
+      <navigator class="info" url="/pages/studynote/add/add" open-type="redirect" hover-class="none">
+        <view class="iconfont icon-null"></view>
+        <text>暂无笔记,点击记录</text>
+      </navigator>
+    </view>
+    </view>
+
+  <button type="primary" class="iconfont icon-del {{isShow?'del-btn':'dellists'}}" size="{{primarySize}}" bindtap="{{delFunc}}"> {{btnText}}</button>
+
+</view>

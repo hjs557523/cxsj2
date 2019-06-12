@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<import src="/dist/loadmore/index.wxml"/>
+ <view class="page-body-wrapper">
+  <image class="logo" src='../../images/daxue10.png' mode='widthFix'></image>
+  <image class="bg-img" src='../../images/background.png' mode='widthFix'></image>
+  <view class="btn-area">
+    <navigator class="btn btn1" hover-class="none" url="../studynote/index/index" open-type='navigate'><text class="icon1"></text><text class="text">笔记编辑</text></navigator>
+    <navigator class="btn btn3" hover-class="none" url="../studyplan/studying/studying" open-type='switchTab'><text class="icon3"></text><text class="text">计划制订</text></navigator>
+    <navigator class="btn btn2" hover-class="none" url="../home/home"  open-type='switchTab'><text class="icon2"></text><text class="text">社区广场</text></navigator>
+    <navigator class="btn btn3" hover-class="none" url="../fun/fun" open-type='navigate'><text class="icon5"></text><text class="text">休闲娱乐</text></navigator>
+    <navigator class="btn btn3" hover-class="none" url="../me/me" open-type='switchTab'><text class="icon4"></text><text class="text">个人中心</text></navigator>
+  </view>
+</view>

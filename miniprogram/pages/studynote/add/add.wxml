@@ -1,0 +1,24 @@
+<!--pages/studynote/add/add.wxml-->
+<view class="add-memo">
+  <view class="head">
+    <view class="left" bindtap="back">
+      <span class="iconfont icon-left"></span>
+      <span>返回</span>
+    </view>
+    
+    <view class="title right" bindtap="saveMemo">
+      <span class="iconfont icon-save"></span>
+      <span>保存</span>
+    </view>
+  </view>
+
+  <view class="memo-text">
+    <view class="memo-title">
+      <textarea bindinput="memoTitle" placeholder="输入标题" maxlength="-1" auto-focus auto-height value="{{inittitle}}"/>
+    </view>  
+    <view class="memo-area">
+      <textarea bindinput="getMemoValue" maxlength="-1" auto-height placeholder="输入或粘贴笔记内容" value="{{inittext}}"/>
+    </view>
+  </view>
+</view>
+

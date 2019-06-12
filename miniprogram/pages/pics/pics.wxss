@@ -1,0 +1,4 @@
+/* pages/pics/pics.wxss */
+.container{
+  height: 1500rpx;
+}

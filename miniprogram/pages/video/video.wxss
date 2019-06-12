@@ -1,0 +1,4 @@
+/* pages/video/video.wxss */
+.container{
+  height: 1500rpx;
+}

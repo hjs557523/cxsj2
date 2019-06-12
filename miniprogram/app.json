@@ -1,0 +1,77 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/publish/publish",
+    "pages/me/me",
+    "pages/homeDetail/homeDetail",
+    "pages/history/history",
+    "pages/collect/collect",
+    "pages/advance/advance",
+    "pages/replay/replay",
+    "pages/studyplan/studying/studying",
+    "pages/studyplan/finished/finished",
+    "pages/studyplan/addplan/addplan",
+    "pages/studynote/add/add",
+    "pages/studynote/edit/edit",
+    "pages/studynote/index/index",
+    "pages/word/word",
+    "pages/pics/pics",
+    "pages/video/video",
+    "pages/fun/fun"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f6e0f3",
+    "navigationBarTitleText": "创新实践_2",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#959394",
+    "selectedColor": "#959394",
+    "backgroungColor": "#eeeeee",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/home_click.png"
+      },
+      {
+        "pagePath": "pages/studyplan/studying/studying",
+        "text": "进行中",
+        "iconPath": "images/icon1.png",
+        "selectedIconPath": "images/icon1Selected.png"
+      },
+      {
+        "pagePath": "pages/studyplan/finished/finished",
+        "iconPath": "images/icon2.png",
+        "selectedIconPath": "images/icon2Selected.png",
+        "text": "已完成"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "社区广场",
+        "iconPath": "images/icon3.png",
+        "selectedIconPath": "images/icon3Selected.png"
+      },
+
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/tab/me_unselect.png",
+        "selectedIconPath": "images/tab/me_select.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+  }

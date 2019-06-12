@@ -1,0 +1,13 @@
+<!--pages/studyplan/finished/finished.wxml-->
+<view class="container log-list">
+  <block class="log-list" wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
+    <view class="log-item">
+      <image src="../../../images/finish.png" class="icon"></image>
+      <view>
+        <view class="title">{{log.text}}</view>
+        <view class="plantime">计划完成日期：{{log.time}}</view>
+        <view class="finishtime">实际完成日期：{{log.completeTime<0? '超时未完成': log.completeTime}}</view>
+        </view>
+      </view>
+  </block>
+  </view>
